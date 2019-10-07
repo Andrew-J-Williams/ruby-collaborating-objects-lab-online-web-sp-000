@@ -18,7 +18,7 @@ class Artist
   end # We then set the paramenters to return an array of all the songs whose artist is equal to the instance of the class.
 
   def add_song(song) # Third, we create 'add_song' to associate a song name with a particular artist.
-    song.artist = self # 
+    song.artist = self # When we call 'song.artist', we set the result equal to 'self', or the artist on which we are calling the method.
   end
 
   def self.find_or_create_by_name(artist_name)
