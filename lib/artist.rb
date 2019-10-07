@@ -21,7 +21,7 @@ class Artist
     song.artist = self # When we call 'song.artist', we set the result equal to 'self', or the artist on which we are calling the method.
   end
 
-  def self.find_or_create_by_name(artist_name) # Fourth, we take our class, the '.all' method,and then look o
+  def self.find_or_create_by_name(artist_name) # Fourth, we take our class, the '.all' method,and then look through our data for a name that equals our artist's name.
     self.all.find {|data| data.name == artist_name} || self.new(artist_name)
   end
 
