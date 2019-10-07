@@ -11,8 +11,8 @@ class MP3Importer
     @files.delete_if {|file| file == "." || file == ".."} # In order to remove files that don't fit our criteria, we use 'delete_if'.
   end
 
-  def import
-    self.files.each {|file| Song.new_by_filename(file)}
+  def import # Fourth, we create a method that takes our filename and creates a song with an artist.
+    self.files.each {|file| Song.new_by_filename(file)} # We iterate over each file and run it through our '.new_by_filename' to create songs.
   end
 
 end
