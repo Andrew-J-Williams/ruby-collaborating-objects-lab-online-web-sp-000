@@ -4,12 +4,12 @@ class Song
 
   @@all = [] # We create another class variable to contain our song information.
 
-  def initialize(name)
+  def initialize(name) # This method performs the same job as our method in 'Artist'
     @name = name
     @@all << self
   end
 
-  def self.all
+  def self.all # Same with our '.all'
     @@all
   end
 
