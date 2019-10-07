@@ -6,8 +6,8 @@ class MP3Importer
     @path = path
   end
 
-  def files # Third, we create a 'files' method for 
-    @files = Dir.entries(@path)
+  def files # Third, we create a 'files' method for loading our mp3 files.
+    @files = Dir.entries(@path) # We use 'Dir.enteries' to 
     @files.delete_if {|file| file == "." || file == ".."}
   end
 
