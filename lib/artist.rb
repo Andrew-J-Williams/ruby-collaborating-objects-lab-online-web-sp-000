@@ -25,7 +25,7 @@ class Artist
     self.all.find {|data| data.name == artist_name} || self.new(artist_name) # If it doesn't exist, we create that artist.
   end
 
-  def print_songs
+  def print_songs # Fifth, we utilize the simple '.each' method to iterate over our 'songs' array and puts every song name.
     self.songs.each {|song| puts song.name}
   end
 
