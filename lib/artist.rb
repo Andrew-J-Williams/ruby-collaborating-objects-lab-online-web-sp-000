@@ -17,7 +17,7 @@ class Artist
     Song.all.select {|song| song.artist == self} # We access our 'Song' class and its class variable and use 'select' on it.
   end # We then set the paramenters to return an array of all the songs whose artist is equal to the instance of the class.
 
-  def add_song(song)
+  def add_song(song) 
     song.artist = self
   end
 
