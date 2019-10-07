@@ -2,7 +2,7 @@ class Artist
 
   attr_accessor :name # Create our attribute for the artist's name.
 
-  @@all = []
+  @@all = [] # Create a global variable to store all our our initialized artists. 
 
   def initialize(name)
     @name = name
