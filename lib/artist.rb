@@ -1,6 +1,6 @@
 class Artist
 
-  attr_accessor :name
+  attr_accessor :name # Create our attribute for the artist's name.
 
   @@all = []
 
