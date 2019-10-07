@@ -1,6 +1,6 @@
 class Song
 
-  attr_accessor :name, :artist
+  attr_accessor :name, :artist # Set our attributes of name and artist. The artist attribute sets the artist object to belong to the song.
 
   @@all = []
 
